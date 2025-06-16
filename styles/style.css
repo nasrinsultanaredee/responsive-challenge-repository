@@ -1,6 +1,139 @@
 * {
   font-family: "Azeret Mono", monospace;
   font-optical-sizing: auto;
-
   font-style: normal;
+}
+/* header style */
+.banner{
+  display: flex;
+  gap: 96px;
+  background-color: rgba(229, 84, 115, 0.1);
+}
+.banner-contant{
+max-width: 708px;
+height: 506px;
+width: 100%;
+margin: 197px 0 147px 240px;
+}
+.banner-title{
+    color: rgb(39, 39, 39);
+font-family: Lato;
+font-size: 80px;
+font-weight: 800;
+line-height: 96px;
+letter-spacing: 0;
+text-align: left;
+margin: 0;
+}
+.banner-description{
+  color: rgba(39, 39, 39, 0.6);
+font-family: Lato;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0;
+text-align: left;
+margin: 32px 0;
+}
+.banner-btn{
+  width: 177px;
+  height: 64px;
+  border-radius: 8px;
+background: rgb(229, 84, 115);
+border: none;
+color: rgb(255, 255, 255);
+font-family: Lato;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0;
+text-align: center;
+padding: 20px 38px;
+}
+.banner-img{
+  width: 635px;
+  max-width: 100%;
+  /* height: 800px; */
+  margin-top: 50px;
+  margin-right: 240px;
+}
+@media screen and (max-width: 576px) {
+  .banner{
+    flex-direction: column;
+  }
+  .banner-contant, .banner-img{
+    width: 100%;
+  }
+  .banner-contant{
+    margin: 5px;
+    height: auto;
+  }
+  .banner-title{
+    font-size: 50px;
+    line-height: 1.2;
+  }
+  .banner-description{
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .banner-btn{
+    width: auto;
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+  .banner-img img{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .banner{
+    flex-direction: column;
+    padding: 20px;
+  }
+  /* .banner-contant, .banner-img{
+    width: 90%;
+  } */
+  .banner-contant{
+    height: auto;
+    width: 90%;
+    max-width: 700px;
+    margin: 10px 0;
+  }
+  .banner-img{
+    width: 80%;
+    max-width: 500px;
+    margin: 10px 0;
+  }
+  .banner-img img{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1024px) {
+  .banner{
+    flex-direction: row;
+    padding: 50px 0;
+    gap: 50px;
+  }
+  .banner-contant{
+    width: 50%;
+    max-width: 600px;
+    margin: 0;
+    padding: 20px;
+  }
+  .banner-title{
+    font-size: 60px;
+    line-height: 1.2;
+  }
+  .banner-description{
+    font-size: 16px;
+  }
+  .banner-img{
+    width: 40%;
+    max-width: 500px;
+    margin: 0;
+  }
+  .banner-img img{
+    width: 100%;
+    height: auto;
+  }
 }
